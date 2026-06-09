@@ -5,7 +5,7 @@ sources:
     # database = projet BigQuery (à adapter à votre projet GCP).
     # Si vous laissez 'database' vide, dbt utilise le projet défini dans profiles.yml.
     # database: mon_projet_gcp
-    schema: sales_database          # = dataset BigQuery contenant les 7 tables brutes
+    schema: td2_ynov          # = dataset BigQuery contenant les 7 tables brutes
     description: "Données internes de l'entreprise (système de vente)."
     tables:
       - name: order

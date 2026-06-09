@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: google_analytics_4
+    schema: td4_ynov              # dataset BigQuery contenant la table aplatie
+    # database: projet-ynov-494608   # à décommenter si le projet diffère du projet par défaut
+    description: "Données d'événements Google Analytics 4 (déjà aplaties)."
+    tables:
+      - name: event_flattened     # <-- adapte ce nom au nom réel de ta table dans td4_ynov
+        description: "Événements GA4 aplatis (1 ligne par événement)."

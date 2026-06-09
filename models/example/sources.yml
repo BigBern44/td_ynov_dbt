@@ -11,13 +11,3 @@ sources:
     tables:
       - name: account_manager_region_mapping
 
-  - name: sales_database
-    schema: sales_database
-    tables:
-      - name: feedback
-      - name: payment
-      - name: product
-      - name: order
-      - name: order_item
-      - name: seller
-      - name: user

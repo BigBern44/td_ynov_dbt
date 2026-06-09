@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: sales_database
+    # database = projet BigQuery (à adapter à votre projet GCP).
+    # Si vous laissez 'database' vide, dbt utilise le projet défini dans profiles.yml.
+    # database: mon_projet_gcp
+    schema: td2_ynov          # = dataset BigQuery contenant les 7 tables brutes
+    description: "Données internes de l'entreprise (système de vente)."
+    tables:
+      - name: order
+        description: "Une ligne par commande passée par un client."
+      - name: order_item
+        description: "Détail des articles d'une commande (1 ligne par produit/vendeur)."
+      - name: payment
+        description: "Paiements associés aux commandes (1 commande peut avoir plusieurs paiements)."
+      - name: product
+        description: "Catalogue produits."
+      - name: seller
+        description: "Vendeurs de la marketplace."
+      - name: user
+        description: "Clients ayant passé commande."
+      - name: feedback
+        description: "Avis / notes laissés par les clients sur leurs commandes."

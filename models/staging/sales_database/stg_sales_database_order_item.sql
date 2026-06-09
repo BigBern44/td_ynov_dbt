@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('td2_ynov', 'order_item') }}
+    select * from {{ source('sales_database', 'order_item') }}
 
 ),
 

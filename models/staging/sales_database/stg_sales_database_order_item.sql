@@ -23,7 +23,7 @@ renamed as (
         cast(shipping_cost as numeric)                                                   as shipping_cost,
 
         -- date : format source "YYYY-MM-DD HH:MM:SS.ffffff UTC" -> timestamp
-        safe.parse_timestamp('%Y-%m-%d %H:%M:%E*S %Z', pickup_limit_date)                as pickup_limit_at
+        pickup_limit_date as pickup_limit_at
 
     from source
 

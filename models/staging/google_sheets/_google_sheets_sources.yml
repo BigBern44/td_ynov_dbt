@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: google_sheets
+    schema: td5_ynov              # dataset BigQuery contenant la table aplatie
+    # database: projet-ynov-494608   # à décommenter si le projet diffère du projet par défaut
+    description: "Données  de la google Sheets (account_manager_region_mapping)."
+    tables:
+      - name: account_manager_region     # <-- adapte ce nom au nom réel de ta table dans td4_ynov
+        description: "mapping des account manager par region"

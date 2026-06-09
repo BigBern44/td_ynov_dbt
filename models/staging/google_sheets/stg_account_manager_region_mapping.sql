@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('google_sheets', 'account_manager_region_mapping') }}
+    select * from {{ source('google_sheets', 'account_manager_region') }}
 
 ),
 

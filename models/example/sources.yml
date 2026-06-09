@@ -12,7 +12,7 @@ sources:
       - name: account_manager_region_mapping
 
   - name: sales_database
-    schema: sales_database
+    schema: td2_ynov
     tables:
       - name: feedback
       - name: payment
